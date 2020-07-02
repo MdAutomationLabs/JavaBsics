@@ -12,18 +12,35 @@ public class JavaBasics {
 				double d2 = -12.33;
 				double d3 = 100; //100.00
 				System.out.println(d1);
+
 				
 			// Arrays are in general static but object array allow us to store any data type  
 				//One dimensional array
 				//1. size is fixed: static array -- to overcome this issue: we use dynamic array -- ArrayList
 				//2. stores only similar data types values -- to overcome this issue: we use object array
-				
-				//6. Object array:
-				Object ob[] = new Object[4];
+
+		 int arr[] = new int[4]; // array size is 4
+		 arr[0]= 2;
+		 arr[1] =3;
+		 arr[2]= 4;
+		 arr[3] = 5;
+
+     String name[] = new String[3]; // array size is 3
+     name[0]="hi";
+
+		 int ar[] = {1,2,3}; // declared array values
+
+		 for (int i=0; i<name.length; i++){
+			 System.out.println("Array values "+name[i]);
+		 }
+
+				//6. Object array: is used to store dynamic values(any values)
+				Object ob[] = new Object[5];
 				ob[0]="Tom";
 				ob[1]=25;
 				ob[2]='M';
 				ob[3]=12.33;
+				ob[4]= "city";
 				System.out.println(ob.length);
 				
 				

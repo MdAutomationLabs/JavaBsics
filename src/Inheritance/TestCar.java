@@ -14,6 +14,7 @@ public class TestCar {
         bb.engine();
 
         //top casting
+        //dynamic polymorphism
         Car b = new BMW(); // child class obj can be referred by parent class ref variable
         b.start();
         b.engine();
@@ -21,10 +22,10 @@ public class TestCar {
         v.engine();
         Vehicle v1 = new Car();
         v1.engine();
-        //down casting
+        //down casting== moving big thing to small
         // parent can not inherit from child
-        //BMW b1 = (BMW) new Car(); // classCastException
-        //b1.start();
+        BMW b1 = (BMW) new Car(); // classCastException
+        b1.start();
 
     }
 }

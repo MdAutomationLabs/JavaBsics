@@ -1,6 +1,6 @@
 package Inheritance;
 
-public class BMW extends Car {
+public class BMW extends Car { // has-o relationship
     @Override
     public void start(){
         System.out.println("Start BMW---");

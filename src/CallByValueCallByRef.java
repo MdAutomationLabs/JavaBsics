@@ -24,7 +24,8 @@ public class CallByValueCallByRef {
 		int c = a+b;
 		return c;
 	}
-	// cal by reference by using object reference 
+	// cal by reference by using object reference
+	// passing by value of obj reference,
 	public void swap(CallByValueCallByRef h) {
 		int temp;
 		temp = h.p; // temp=40
